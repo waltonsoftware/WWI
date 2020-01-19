@@ -1,0 +1,182 @@
+﻿html,
+body {
+	/*padding-top: 50px;
+    padding-bottom: 20px;*/
+	height: 100%;
+	margin: 0;
+}
+
+.brand {
+	text-transform:capitalize !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.footer {
+	clear: both;
+	font-size: 13px;
+	padding: 0 15px 0 15px;
+	background-color: #363839;
+	color: #8c8989;
+	padding-top: 10px;
+}
+
+.footer,
+.push {
+	height: 100px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+.floatLeft {
+	position: relative;
+	float: left;
+}
+
+.navbar-blue {
+	background-color: Highlight;
+	color: black;
+}
+
+.compareButton {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.buyNowButton {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+
+.planBox {
+	width: 200px;
+	height: 200px;
+	border: 3px solid Navy;
+	background-color: #a7ceeb;
+}
+
+.planBoxSidebar {
+	width: 200px;
+}
+
+.planBoxRow {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.leftMargin {
+	margin-left: 20px;
+}
+
+#tblAboutStyle tr td {
+	padding-bottom: 10px;
+}
+
+.formLabel {
+	font-size: 14px;
+}
+
+.blackOnWhiteLink a {
+	color: #000000;
+	text-decoration: none;
+}
+
+	.blackOnWhiteLink a:hover {
+		color: #000000;
+		text-decoration: underline;
+	}
+
+.table tr td {
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.dataTable tr td {
+	white-space: nowrap;
+	border-top: solid 1px #ddd;
+	padding: 10px;
+}
+
+.dataTable thead th {
+	/*border-top: solid 1px #ddd;*/
+	padding: 0 10px;
+}
+
+.personTable tr td {
+	font-size: 12px;
+}
+
+.editorTable {
+	width: 100%;
+}
+
+.editorTable tr td {
+	white-space: nowrap;
+}
+
+	.editorTable tr td div {
+		white-space: nowrap;
+	}
+
+.editLabel {
+	font-weight: bold;
+}
+
+.checkBoxEdit {
+	padding: 10px, 5px, 0, 5px;
+}
+
+label {
+	padding-left: 5px;
+}
+
+a.editButtonBackground {
+	background: url(../Images/edit_button.png) no-repeat top left;
+	display: block;
+	width: 56px;
+	height: 28px;
+	text-indent: -9999px; /* hides the link text */
+}
+
+a.deleteButtonBackground {
+	background: url(../Images/delete_button.png) no-repeat top left;
+	display: block;
+	width: 56px;
+	height: 28px;
+	text-indent: -9999px; /* hides the link text */
+}
