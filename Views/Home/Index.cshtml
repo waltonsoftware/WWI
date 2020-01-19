@@ -1,0 +1,51 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+@Styles.Render("~/bundles/jqueryuicustomcss")
+
+<div class="jumbotron" style="background-image: url('../../Images/Front-top-960.jpg'); background-attachment: fixed; background-position: bottom; background-repeat: no-repeat; background-size: cover;">
+	<div style="background-color: rgba(0, 0, 0, 0.5);">
+		<div style="font-size: 35px; color: white; padding-left: 20px;">World Wide Importers</div>
+		<div style="margin-top:20px;">
+			<p style="font-size: 17px; padding-top: 17px; padding-bottom: 12px; padding-left: 20px; color: white;">
+				(WWI) is a wholesale novelty goods importer and distributor operating from the San Francisco bay area.
+				As a wholesaler, WWI's customers are mostly companies who resell to individuals.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<img src="~/Images/Purchasing.jpg" width="310" height="160" />
+		<p>
+			As in most business organizations, purchasing management involves people, processes and technology. So what is purchasing? Purchasing
+			involves the sourcing, purchasing and delivery of goods and services that a company needs either in its manufacturing and business
+			management or for stock that it resells at a profit.
+		</p>
+		<p>
+			<a class="btn btn-default" href="~/Purchasing/Management">Purchasing Management &raquo;</a>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="~/Images/Inventory2.png" width="310" height="160" />
+		<p>
+			Inventory management is the supervision of non-capitalized assets (inventory) and stock items. A component of supply chain management,
+			inventory management supervises the flow of goods from manufacturers to warehouses and from these facilities to point of sale.
+		</p>
+		<p><a class="btn btn-default" href="~/Inventory/Management">Inventory Management &raquo;</a></p>
+	</div>
+	<div class="col-md-4">
+		<img src="~/Images/sales2.png" width="310" height="160" />
+		<p>
+			Having a strong sales team is crucial to the success of a company because the sales department is responsible for making sales,
+			growing your business and retaining existing customers. Ultimately, the most important function of your sales department is maintaining
+			relationships with your customers. This personal touch is the key to happy, long-term client relationships, not to mention increased profitability.
+		</p>
+		<p><a class="btn btn-default" href="~/Sales/Management">Sales Management &raquo;</a></p>
+	</div>
+</div>
+
+@section scripts {
+	@Scripts.Render("~/bundles/jquerycustomui")
+}

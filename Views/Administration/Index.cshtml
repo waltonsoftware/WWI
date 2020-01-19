@@ -1,0 +1,62 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+	.adminBlock {
+		width: 250px;
+		height: 150px;
+		border: solid 1px #d9d9d9;
+		padding: 3px;
+		margin-bottom: 10px;
+		vertical-align: top;
+	}
+
+	.adminBlockTitle {
+		width: 100%;
+		padding: 10px;
+		border-bottom: solid 1px #d9d9d9;
+		font-weight: bold;
+	}
+
+	.adminBlockBody {
+		width: 100%;
+		padding: 10px;
+	}
+</style>
+
+<h2>Administration</h2>
+<hr />
+
+<table>
+	<tr>
+		<td>
+			<div class="adminBlock">
+				<div class="adminBlockTitle">
+					Identity
+				</div>
+				<div class="adminBlockBody">
+					<div>
+						@Html.ActionLink("Users", "Users", "Administration")
+					</div>
+					<div>
+						@Html.ActionLink("Roles", "Roles", "Administration")
+					</div>
+					<div>
+						@Html.ActionLink("Access Levels", "AccessLevels", "Administration")
+					</div>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="adminBlock">
+				<div class="adminBlockTitle">
+					Warehouse
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WWI.Models.AspNetRolesModel>
+
+@{
+    ViewBag.Title = "Roles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Roles</h2>
+<hr />
+<p>
+	@Html.ActionLink("Create New", "AddRole")
+	|
+	@Html.ActionLink("Back to Administration", "Index")
+</p>
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Name)
+		</th>
+		<th></th>
+	</tr>
+
+@foreach (var item in Model) {
+	<tr>
+		<td>
+			@Html.Raw(item.Name)
+		</td>
+		<td>
+			@Html.ActionLink("Edit", "EditRole", "Administration", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+			@Html.ActionLink("Delete", "DeleteRole", "Administration", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+		</td>
+	</tr>
+}
+
+</table>
